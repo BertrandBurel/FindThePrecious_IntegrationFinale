@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'aniron';
+    src: url(Fonts/Titre/anicb.ttf);
+}
+@font-face {
+    font-family: 'partyBusiness';
+    src: url(Fonts/Texte/partybusiness.ttf);
+}
+@font-face {
+    font-family: 'symbole';
+    src: url(Fonts/Images/tngan.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url("img/bg_light.png");
+}
+
+.img-fluid{
+    width: 100%;
+    height: 50%;
+    max-height: 600px;
+}
+.navbar{
+    background-color: orange;
+}
+.logo {
+    z-index: 1;
+    background-image: url("img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3vw;
+    width: 25vw;
+}
+.menuPrincipal a{
+    color: white !important;
+    font-family: 'aniron';
+}
+.menuPrincipal a:hover{
+    text-decoration: underline white !important;
+}
+
+.carousel-caption{
+    height: 100%;
+    top: 30%;
+}
+.carousel-caption h3{
+    font-size: 5vw;
+    font-family: 'aniron';
+}
+.carousel-caption p{
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 768px){
+    .carousel{
+        display: none !important;
+    }
+}
+
+/* cette media correspond au passage du menu en mode burger */
+@media screen and (max-width: 991px){
+    .nav-link span{
+        display: none;
+    }
+}
+.wantedTitre {
+    margin: 2vw 0 2vw 0;
+}
+
+.wantedTitre .titre {
+    font-size: 1.5vw;
+    font-family: 'aniron';
+}
+.wantedTitre .up {
+    font-size: 1.7vw;
+}
+.wantedTitre .symbole {
+    font-family: 'symbole';
+    font-size: 2vw;
+    color: orange;
+}
+.menuWanted .symbole{
+    font-family: 'symbole';
+    font-size: 2vw;
+    color: orange;
+    display: none;
+}
+.menuWanted a {
+    font-family: 'partyBusiness';
+    font-size: 2vw;
+    color: gray;
+    height: 50px;
+}
+.menuWanted a:hover {
+    color: orange;
+}
+.menuWanted a:hover .symbole{
+    display: inline;
+}
+
+
+@media screen and (max-width: 768px){
+    .wantedTitre .titre{
+        font-size: 2.5vw;
+    }
+    .wantedTitre .symbole {
+        font-size: 2.5vw;
+    }
+    .wantedTitre .up {
+        font-size: 3.5vw;
+    }
+    .menuWanted a {
+        font-size: 3vw;
+    }
+    .menuWanted .symbole {
+        font-size: 3vw;
+    }
+}
+.wanted {
+    z-index: 0;
+    height: 35vw;
+    border: 5px solid black;
+    padding: 0 0 0 0;
+    margin: 25px 25px 25px 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'partyBusiness';
+}
+.flou {
+    background-color: rgba(94, 94, 94, 0.5);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.img1 {
+    background-image: url("img/gandalf.png");
+}
+.img2 {
+    background-image: url("img/aragorn.png");
+}
+.img3 {
+    background-image: url("img/gimli.png");
+}
+
+.reward{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 20%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 2.5vw;
+    text-align: center;
+}
+.reward span {
+    color: orange;
+}
+.name {
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    font-size: 4vw;
+    color: white;
+}
+
+.nameGimli {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 4vw;
+    color: white;
+}
+.dead {
+    position: absolute;
+    left: 34%;
+    top: 15%;
+    height: 20%;
+    width: 40%;
+    font-size: 3.5vw;
+    color: orange;
+}
+.infos {
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20%;
+    font-size: 2.5vw;
+    padding-left: 10px;
+}
+
+.wanted:hover .reward {
+    display: none;
+}
+.wanted:hover .flou {
+    display: none;
+}
+.wanted:hover .dead {
+    display: none;
+}
+.wanted:hover .infos {
+    display: none;
+}
+.wanted:hover .name {
+    top: 80%;
+    transition-duration: 1s;
+}
+.wanted:hover .nameGimli {
+    top: 80%;
+    transition-duration: 1s;
+}
+
+@media screen and (max-width: 768px){
+    .wanted {
+        height: 90vw;
+    }
+    .name {
+        font-size: 10vw;
+    }
+    .nameGimli {
+        font-size: 10vw;
+    }
+    .infos {
+        font-size: 6vw;
+    }
+    .reward {
+        font-size: 6vw;
+    }
+    .dead {
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 574px){
+    .wanted {
+        height: 90vw;
+    }
+}
