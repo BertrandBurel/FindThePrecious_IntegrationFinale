@@ -2,10 +2,12 @@
     font-family: 'aniron';
     src: url(Fonts/Titre/anicb.ttf);
 }
+
 @font-face {
     font-family: 'partyBusiness';
     src: url(Fonts/Texte/partybusiness.ttf);
 }
+
 @font-face {
     font-family: 'symbole';
     src: url(Fonts/Images/tngan.ttf);
@@ -16,14 +18,16 @@ body {
     background-image: url("img/bg_light.png");
 }
 
-.img-fluid{
+.img-fluid {
     width: 100%;
     height: 50%;
     max-height: 600px;
 }
-.navbar{
+
+.navbar {
     background-color: orange;
 }
+
 .logo {
     z-index: 1;
     background-image: url("img/logo.png");
@@ -33,38 +37,43 @@ body {
     height: 3vw;
     width: 25vw;
 }
-.menuPrincipal a{
+
+.menuPrincipal a {
     color: white !important;
     font-family: 'aniron';
 }
-.menuPrincipal a:hover{
+
+.menuPrincipal a:hover {
     text-decoration: underline white !important;
 }
 
-.carousel-caption{
+.carousel-caption {
     height: 100%;
     top: 30%;
 }
-.carousel-caption h3{
+
+.carousel-caption h3 {
     font-size: 5vw;
     font-family: 'aniron';
 }
-.carousel-caption p{
+
+.carousel-caption p {
     font-size: 3vw;
 }
 
-@media screen and (max-width: 768px){
-    .carousel{
+@media screen and (max-width: 768px) {
+    .carousel {
         display: none !important;
     }
 }
 
 /* cette media correspond au passage du menu en mode burger */
-@media screen and (max-width: 991px){
-    .nav-link span{
+@media screen and (max-width: 991px) {
+    .nav-link span {
         display: none;
     }
 }
+
 .wantedTitre {
     margin: 2vw 0 2vw 0;
 }
@@ -73,51 +82,62 @@ body {
     font-size: 1.5vw;
     font-family: 'aniron';
 }
+
 .wantedTitre .up {
     font-size: 1.7vw;
 }
+
 .wantedTitre .symbole {
     font-family: 'symbole';
     font-size: 2vw;
     color: orange;
 }
-.menuWanted .symbole{
+
+.menuWanted .symbole {
     font-family: 'symbole';
     font-size: 2vw;
     color: orange;
     display: none;
 }
+
 .menuWanted a {
     font-family: 'partyBusiness';
     font-size: 2vw;
     color: gray;
     height: 50px;
 }
+
 .menuWanted a:hover {
     color: orange;
 }
-.menuWanted a:hover .symbole{
+
+.menuWanted a:hover .symbole {
     display: inline;
 }
 
 
-@media screen and (max-width: 768px){
-    .wantedTitre .titre{
+@media screen and (max-width: 768px) {
+    .wantedTitre .titre {
         font-size: 2.5vw;
     }
+
     .wantedTitre .symbole {
         font-size: 2.5vw;
     }
+
     .wantedTitre .up {
         font-size: 3.5vw;
     }
+
     .menuWanted a {
         font-size: 3vw;
     }
+
     .menuWanted .symbole {
         font-size: 3vw;
     }
 }
+
 .wanted {
     z-index: 0;
     height: 35vw;
@@ -129,6 +149,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'partyBusiness';
 }
+
 .flou {
     background-color: rgba(94, 94, 94, 0.5);
     z-index: 1;
@@ -139,14 +160,16 @@ body {
 .img1 {
     background-image: url("img/gandalf.png");
 }
+
 .img2 {
     background-image: url("img/aragorn.png");
 }
+
 .img3 {
     background-image: url("img/gimli.png");
 }
 
-.reward{
+.reward {
     position: absolute;
     left: 10%;
     top: 10%;
@@ -157,9 +180,11 @@ body {
     font-size: 2.5vw;
     text-align: center;
 }
+
 .reward span {
     color: orange;
 }
+
 .name {
     position: absolute;
     top: 45%;
@@ -175,6 +200,7 @@ body {
     font-size: 4vw;
     color: white;
 }
+
 .dead {
     position: absolute;
     left: 34%;
@@ -184,6 +210,7 @@ body {
     font-size: 3.5vw;
     color: orange;
 }
+
 .infos {
     position: absolute;
     bottom: 0px;
@@ -198,47 +225,106 @@ body {
 .wanted:hover .reward {
     display: none;
 }
+
 .wanted:hover .flou {
     display: none;
 }
+
 .wanted:hover .dead {
     display: none;
 }
+
 .wanted:hover .infos {
     display: none;
 }
+
 .wanted:hover .name {
     top: 80%;
     transition-duration: 1s;
 }
+
 .wanted:hover .nameGimli {
     top: 80%;
     transition-duration: 1s;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .wanted {
         height: 90vw;
     }
+
     .name {
         font-size: 10vw;
     }
+
     .nameGimli {
         font-size: 10vw;
     }
+
     .infos {
         font-size: 6vw;
     }
+
     .reward {
         font-size: 6vw;
     }
+
     .dead {
         font-size: 10vw;
     }
 }
 
-@media screen and (max-width: 574px){
+@media screen and (max-width: 574px) {
     .wanted {
         height: 90vw;
     }
+}
+
+/* Formulaire */
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 80%;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+input,
+textarea,
+select {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
 }
